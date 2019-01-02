@@ -12,4 +12,4 @@ if(b!=0):
         if(s[j]=='a'):
             count = count + 1
         j+=1
-print((int(a*counter))+count)
+print((int(a*counter))+count))
