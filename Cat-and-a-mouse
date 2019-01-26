@@ -1,0 +1,12 @@
+n=int(input())
+for i in range(n):
+    ar=input().split()
+    a=int(ar[0])
+    b=int(ar[1])
+    c=int(ar[2])
+    if abs(c-a)<abs(c-b):
+        print("Cat A")
+    elif abs(c-a)>abs(c-b):
+        print('Cat B')
+    else:
+        print('Mouse C')
