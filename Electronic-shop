@@ -1,0 +1,17 @@
+bnm = input().split()
+b = int(bnm[0])
+n = int(bnm[1])
+m = int(bnm[2])
+sum=0
+keyboards = list(map(int, input().rstrip().split()))
+drives = list(map(int, input().rstrip().split()))
+for i in keyboards:
+    for j in drives:
+        if (i+j)<=b and sum<(i+j):
+            sum=i+j
+        elif sum>(i+j):
+            sum=sum
+if sum==0:
+    print(-1)
+else:
+    print(sum)
